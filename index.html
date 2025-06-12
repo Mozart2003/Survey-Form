@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Name: 
+          <input id="name" type="text" placeholder=" Enter your name..." required/>
+        </label>
+        <label id="email-label">Email: 
+          <input id="email" type="email" placeholder=" Enter your email address..." required/>
+        </label>
+        <label id="number-label">Phone Number: 
+          <input id="number" type="number" min="11" max="12" placeholder=" Enter your phone number..."/>
+        </label>
+        <label for="dropdown">
+          Gender:
+          <select id="dropdown">
+            <option value="">--Select your gender--</option>
+            <option value="1">Male</option>
+            <option value="2">Female</option>
+            <option value="3">Prefer not to say</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Marital Status: </legend>
+        <label for="single">
+          <input id="single" type="radio" name="marital-status" class="inline" value="1" checked /> Single
+        </label>
+        <label for="married">
+          <input id="married" type="radio" name="marital-status" class="inline" value="2" /> Married
+        </label>
+        <label for="widowed">
+          <input id="widowed" type="radio" name="marital-status" class="inline" value="3" /> Widowed
+        </label>
+        <label for="divorced">
+          <input id="divorced" type="radio" name="marital-status" class="inline" value="4" /> Divorced
+        </label>
+        <label for="separated">
+          <input id="separated" type="radio" name="marital-status" class="inline" value="5" /> Separated
+        </label>
+        <label for="prefer-not-to-say">
+          <input id="prefer-not-to-say" type="radio" name="marital-status" class="inline" value="6" /> Prefer not to say
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="hobbies">
+          Which of the following hobbies do you enjoy? (Select all that apply) 
+        </label>
+        <label for="reading">
+          <input id="reading" type="checkbox" name="hobbies" class="inline" value="1" /> Reading
+        </label>
+        <label for="travelling">
+          <input id="travelling" type="checkbox" name="hobbies" class="inline" value="2" /> Travelling
+        </label>
+        <label for="cooking">
+          <input id="cooking" type="checkbox" name="hobbies" class="inline" value="3" /> Cooking
+        </label>
+        <label for="playing-sports">
+          <input id="playing-sports" type="checkbox" name="hobbies" class="inline" value="4" /> Playing Sports
+        </label>
+        <label for="watching-movies">
+          <input id="watching-movies" type="checkbox" name="hobbies" class="inline" value="5" /> Watching Movies
+        </label>
+        <label for="gaming">
+          <input id="gaming" type="checkbox" name="hobbies" class="inline" value="6" /> Gaming
+        </label>
+        <label for="arts">
+          <input id="arts" type="checkbox" name="hobbies" class="inline" value="7" /> Arts
+        </label>
+        <label for="other">
+          <input id="other" type="checkbox" name="hobbies" class="inline" value="8" /> Other
+        </label>
+        <label for="comment">
+          Tell us more about yourself or share any additional comments:
+          <textarea id="comment" name="comment" rows="5" cols="30" placeholder="Type your comments here..."></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" id="submit"/>
+    </form>
+  </body>
+</html>
